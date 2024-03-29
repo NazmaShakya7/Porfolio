@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@layer base {
+  body {
+    @apply  text-primary font-secondary bg-white;
+  }
+  h1 {
+    @apply text-[54px] lg:text-[90px] font-primary font-bold capitalize leading-[100%] tracking-[-0.05em] mb-2;
+  }
+  h2 {
+    @apply text-[30px] lg:text-[50px] font-primary font-bold capitalize leading-[100%] tracking-[-0.05em] mb-2;
+  }
+  p.logo{
+    @apply text-[16px] lg:text-[22px] font-primary font-semibold capitalize leading-[100%] ;
+  }
+  h3{
+    @apply text-[15px] lg:text-[20px] font-secondary font-bold leading-[100%]  mb-2;
+  }
+  p,a {
+    @apply text-grey font-medium transition duration-300;
+  }
+  a:hover{
+    @apply opacity-50;
+  }
+  @media only screen and (min-width: 600px) {
+    .section {
+      @apply h-screen w-[100%];
+    }
+    body {
+      @apply overflow-hidden;
+    }
+  }
+  .btn {
+    @apply transition duration-300 py-[16px] px-[40px] flex items-center justify-center text-base uppercase font-secondary font-medium bg-primary text-white text-[16px];
+  }
+  .btn:hover{
+    @apply  opacity-80;
+  }
+}
